@@ -1,0 +1,708 @@
+/* Container Setup */
+.aws-data-page {
+  position: relative;
+  background-color: #080D1C;
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section Styles (Background Image applied here exclusively) */
+.aws-hero-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.aws-dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(8, 13, 28, 0.88);
+  z-index: 1;
+}
+
+.aws-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.aws-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.aws-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #cbd5e1;
+  width: fit-content;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff9900;
+  border-radius: 50%;
+}
+
+.aws-hero-title {
+  font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.aws-white-text { color: #ffffff; }
+.aws-grey-text { color: #94a3b8; }
+
+.aws-hero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 560px;
+}
+
+/* Architecture Card Component */
+.aws-hero-visual { display: flex; justify-content: center; align-items: center; }
+
+.architecture-card {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.arch-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot.red { background-color: #ef4444; }
+.dot.yellow { background-color: #f59e0b; }
+.dot.green { background-color: #10b981; }
+
+.arch-card-heading {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.arch-tree { display: flex; flex-direction: column; align-items: center; gap: 0px; }
+
+.arch-node {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  color: #f8fafc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.parent-node { justify-content: center; background: #0b1329; }
+.highlight-node { background: #1e293b; }
+.final-node { background: linear-gradient(135deg, #ff9900 0%, #ff7300 100%); border: none; }
+
+.connector-vertical { width: 2px; height: 20px; background: rgba(255, 255, 255, 0.2); }
+
+.arch-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; }
+
+.arch-grid-3 .arch-node { flex-direction: column; padding: 10px; text-align: center; gap: 4px; font-size: 0.75rem; }
+
+.service-tag {
+  background: rgba(255, 153, 0, 0.2);
+  color: #ffaa33;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+
+/* ==========================================
+   02. INTRODUCTION SECTION STYLES
+   ========================================== */
+.aws-intro-section {
+  position: relative;
+  z-index: 2;
+  padding: 90px 20px 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(11, 19, 41, 0.85) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 20px 30px -15px rgba(0, 0, 0, 0.5);
+}
+
+.aws-intro-container {
+  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.aws-intro-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aws-intro-title {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.aws-intro-description {
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.aws-intro-features-list {
+  margin-top: 10px;
+}
+
+.list-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 14px;
+}
+
+.aws-intro-features-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+}
+
+.aws-intro-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 153, 0, 0.2);
+  color: #ff9900;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.aws-intro-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.intro-stat-card {
+  background: rgba(18, 28, 51, 0.9);
+  border: 1px solid rgba(255, 153, 0, 0.2);
+  backdrop-filter: blur(12px);
+  padding: 28px 20px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.intro-stat-card:hover {
+  border-color: #ff9900;
+  transform: translateY(-3px);
+  box-shadow: 0 20px 35px -10px rgba(255, 153, 0, 0.15);
+}
+
+.stat-icon-box {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 153, 0, 0.15);
+  border: 1px solid rgba(255, 153, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff9900;
+}
+
+.stat-icon-box svg {
+  width: 22px;
+  height: 22px;
+}
+
+.intro-stat-card h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
+.intro-stat-card p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+/* ==========================================
+   03. DATA MANAGEMENT SERVICES SECTION STYLES
+   ========================================== */
+.aws-services-section {
+  position: relative;
+  z-index: 2;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aws-services-container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.services-section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.aws-services-title {
+  font-size: clamp(2.2rem, 3.2vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.aws-services-subtitle {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.services-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card-item {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card-item:hover {
+  border-color: #ff9900;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -10px rgba(255, 153, 0, 0.2);
+  background: rgba(20, 30, 55, 0.9);
+}
+
+.service-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-card-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 153, 0, 0.1);
+  border: 1px solid rgba(255, 153, 0, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff9900;
+}
+
+.service-card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.service-card-num {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.05em;
+}
+
+.service-card-item h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.service-card-item p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.service-tags-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.service-tags-list li {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.service-card-item:hover .service-tags-list li {
+  border-color: rgba(255, 153, 0, 0.3);
+  color: #ffaa33;
+  background: rgba(255, 153, 0, 0.05);
+}
+
+
+/* ==========================================
+   04. SECURITY & COMPLIANCE SECTION STYLES
+   ========================================== */
+.aws-security-section {
+  position: relative;
+  z-index: 2;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(11, 19, 41, 0.9) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.aws-security-container {
+  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.aws-security-content-side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.aws-security-title {
+  font-size: clamp(2.2rem, 3.2vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.aws-security-description {
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 580px;
+}
+
+.security-blocks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.sec-block-item {
+  background: rgba(18, 28, 51, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.sec-block-item:hover {
+  border-color: rgba(255, 153, 0, 0.4);
+  background: rgba(22, 34, 60, 0.95);
+  transform: translateY(-2px);
+}
+
+.sec-block-icon {
+  font-size: 1.4rem;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 153, 0, 0.12);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sec-block-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.sec-block-item p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.aws-security-visual-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.security-arch-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 153, 0, 0.2);
+}
+
+.security-parent-node {
+  background: #0f172a;
+  border: 1px solid rgba(255, 153, 0, 0.3);
+}
+
+.security-final-node {
+  background: linear-gradient(135deg, #ff9900 0%, #ff5722 100%);
+  color: white;
+}
+
+
+/* ==========================================
+   05. PROCESS ROADMAP SECTION STYLES (Static Timeline)
+   ========================================== */
+.aws-process-section {
+  position: relative;
+  z-index: 2;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(11, 19, 41, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.aws-process-container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.process-timeline-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.process-timeline-item {
+  background: rgba(18, 28, 51, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px 30px;
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.process-timeline-item:hover {
+  border-color: rgba(255, 153, 0, 0.4);
+  transform: translateY(-2px);
+  background: rgba(22, 34, 60, 0.95);
+}
+
+.process-step-badge {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ff9900 0%, #ff5722 100%);
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);
+}
+
+.process-card-content h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.04em;
+}
+
+.process-card-content p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.process-timeline-arrow {
+  font-size: 1.25rem;
+  color: #ff9900;
+  font-weight: 700;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce-arrow 2s infinite;
+}
+
+@keyframes bounce-arrow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .services-grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 968px) {
+  .aws-hero-container,
+  .aws-intro-container,
+  .aws-security-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: left;
+  }
+  
+  .aws-hero-content,
+  .aws-security-content-side { align-items: flex-start; }
+
+  .aws-intro-features-list ul,
+  .security-blocks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid-6 {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+}
