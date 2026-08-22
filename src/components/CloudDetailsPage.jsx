@@ -17,7 +17,7 @@ const scriptCodeSlate1 = [
   "const code = \"Next.js\";",
   "",
   "function buildProduct() {",
-  "   return design + code;",
+  "    return design + code;",
   "}"
 ];
 
@@ -182,7 +182,7 @@ const awsExpertiseItems = [
     title: 'Cloud Migration Services',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="pro-svg-icon">
-        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"></path>
         <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
       </svg>
     )
@@ -217,7 +217,7 @@ const awsCloudServices = [
     title: 'Cloud Migration',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="pro-svg-icon">
-        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
         <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
         <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
         <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
@@ -273,91 +273,117 @@ const awsCloudServices = [
   }
 ];
 
-// Section 5: Data Management Services
-const dataMgmtServices = [
+// Section 5: Key Features Data
+const keyFeaturesData = [
   {
-    id: 'd1',
-    title: 'Data Storage',
+    id: 'kf1',
+    side: 'left',
+    titleHighlight: 'Installation, Configuration & Activation',
+    titleRest: 'of AWS Instances',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="pro-svg-icon">
-        <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
-        <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
-        <line x1="6" y1="6" x2="6.01" y2="6" />
-        <line x1="6" y1="18" x2="6.01" y2="18" />
-      </svg>
-    ),
-    desc: 'Secure and structured storage solutions for business-critical data.'
+      <div className="kf-brand-aws">
+        <span className="kf-aws-text">aws</span>
+        <div className="kf-aws-smile"></div>
+      </div>
+    )
   },
   {
-    id: 'd2',
-    title: 'Data Integration',
+    id: 'kf2',
+    side: 'left',
+    titleHighlight: 'Automated',
+    titleRest: 'Data Backup Solutions',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="pro-svg-icon">
-        <polyline points="16 3 21 3 21 8" />
-        <line x1="4" y1="20" x2="21" y2="3" />
-        <polyline points="21 16 21 21 16 21" />
-        <line x1="15" y1="15" x2="21" y2="21" />
-        <line x1="4" y1="4" x2="9" y2="9" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="kf-svg-icon">
+        <path d="M3 15v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4"></path>
+        <polyline points="17 8 12 3 7 8"></polyline>
+        <line x1="12" y1="3" x2="12" y2="15"></line>
       </svg>
-    ),
-    desc: 'Connect data from multiple applications and sources into a unified environment.'
+    )
   },
   {
-    id: 'd3',
-    title: 'Data Analytics',
+    id: 'kf3',
+    side: 'left',
+    titleHighlight: 'Secure Data',
+    titleRest: 'Storage & Management',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="pro-svg-icon">
-        <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
-        <path d="M22 12A10 10 0 0 0 12 2v10z" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="kf-svg-icon">
+        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
       </svg>
-    ),
-    desc: 'Transform raw data into meaningful insights for better decision-making.'
+    )
   },
   {
-    id: 'd4',
-    title: 'Real-Time Data Processing',
+    id: 'kf4',
+    side: 'left',
+    titleHighlight: 'Complete',
+    titleRest: 'Server Monitoring & Administration',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="pro-svg-icon">
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="kf-svg-icon">
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+        <line x1="8" y1="21" x2="16" y2="21"></line>
+        <line x1="12" y1="17" x2="12" y2="21"></line>
       </svg>
-    ),
-    desc: 'Process and analyze data efficiently as it is generated in real-time streams.'
+    )
   },
   {
-    id: 'd5',
-    title: 'Data Security',
+    id: 'kf5',
+    side: 'right',
+    titleHighlight: 'Linux Server',
+    titleRest: 'Management & Optimization',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="pro-svg-icon">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="kf-svg-icon">
+        <path d="M12 2a10 10 0 0 0-7.5 16.5c1 1 2 2 2.5 3.5h10c.5-1.5 1.5-2.5 2.5-3.5A10 10 0 0 0 12 2z"></path>
+        <circle cx="9" cy="10" r="1.5" fill="currentColor"></circle>
+        <circle cx="15" cy="10" r="1.5" fill="currentColor"></circle>
       </svg>
-    ),
-    desc: 'Protect sensitive information with access control, encryption, and monitoring.'
+    )
   },
   {
-    id: 'd6',
-    title: 'Data Quality & Management',
+    id: 'kf6',
+    side: 'right',
+    titleHighlight: 'Cloud',
+    titleRest: 'Security Implementation',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="pro-svg-icon">
-        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-        <polyline points="22 4 12 14.01 9 11.01" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="kf-svg-icon">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
       </svg>
-    ),
-    desc: 'Improve data accuracy, consistency, and accessibility across your organization.'
+    )
+  },
+  {
+    id: 'kf7',
+    side: 'right',
+    titleHighlight: 'Infrastructure',
+    titleRest: 'Performance Optimization',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="kf-svg-icon">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+    )
+  },
+  {
+    id: 'kf8',
+    side: 'right',
+    titleHighlight: '24/7',
+    titleRest: 'Monitoring & Technical Support',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="kf-svg-icon">
+        <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.63-5.63"></path>
+      </svg>
+    )
   }
 ];
 
 export default function CloudDetailsPage() {
   const navigate = useNavigate();
 
-  // Active Node State for Section 4 Hub
   const [activeNode, setActiveNode] = useState('s1');
 
-  // Streaming State for Slate 1
   const [displayedText1, setDisplayedText1] = useState("");
   const [lineIdx1, setLineIdx1] = useState(0);
   const [charIdx1, setCharIdx1] = useState(0);
 
-  // Streaming State for Slate 2
   const [displayedText2, setDisplayedText2] = useState("");
   const [lineIdx2, setLineIdx2] = useState(0);
   const [charIdx2, setCharIdx2] = useState(0);
@@ -369,7 +395,6 @@ export default function CloudDetailsPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Auto-Scroll Slates
   useEffect(() => {
     if (editorBodyRef1.current) editorBodyRef1.current.scrollTop = editorBodyRef1.current.scrollHeight;
   }, [displayedText1]);
@@ -378,7 +403,6 @@ export default function CloudDetailsPage() {
     if (editorBodyRef2.current) editorBodyRef2.current.scrollTop = editorBodyRef2.current.scrollHeight;
   }, [displayedText2]);
 
-  // Slate 1 Stream Engine
   useEffect(() => {
     if (lineIdx1 < scriptCodeSlate1.length) {
       const currentLine = scriptCodeSlate1[lineIdx1];
@@ -406,7 +430,6 @@ export default function CloudDetailsPage() {
     }
   }, [lineIdx1, charIdx1]);
 
-  // Slate 2 Stream Engine
   useEffect(() => {
     if (lineIdx2 < scriptCodeSlate2.length) {
       const currentLine = scriptCodeSlate2[lineIdx2];
@@ -434,7 +457,6 @@ export default function CloudDetailsPage() {
     }
   }, [lineIdx2, charIdx2]);
 
-  // Mouse Parallax Handlers for Section 4 Hub
   const [coords4, setCoords4] = useState({ x: 0, y: 0 });
   const handleMouseMove4 = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -445,9 +467,19 @@ export default function CloudDetailsPage() {
   };
   const handleMouseLeave4 = () => setCoords4({ x: 0, y: 0 });
 
+  const [coords5, setCoords5] = useState({ x: 0, y: 0 });
+  const handleMouseMove5 = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setCoords5({
+      x: ((e.clientX - rect.left) / rect.width - 0.5) * 2,
+      y: ((e.clientY - rect.top) / rect.height - 0.5) * 2,
+    });
+  };
+  const handleMouseLeave5 = () => setCoords5({ x: 0, y: 0 });
+
   return (
     <div className="cd-page-full-wrapper">
-      
+
       {/* =========================================================================
           SECTION 1: HERO 3D MULTI-SLATE TRANSPARENT CODING ENVIRONMENT
           ========================================================================= */}
@@ -474,10 +506,7 @@ export default function CloudDetailsPage() {
               </span>
             </h1>
 
-            {/* Feature List (SECURE, OPTIMIZE, SCALE) */}
             <div className="cd-feature-list">
-              
-              {/* 1. SECURE */}
               <div className="feature-item">
                 <div className="feature-icon cyan-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="custom-f-svg">
@@ -493,7 +522,6 @@ export default function CloudDetailsPage() {
                 </div>
               </div>
 
-              {/* 2. OPTIMIZE */}
               <div className="feature-item">
                 <div className="feature-icon orange-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="custom-f-svg">
@@ -508,7 +536,6 @@ export default function CloudDetailsPage() {
                 </div>
               </div>
 
-              {/* 3. SCALE */}
               <div className="feature-item">
                 <div className="feature-icon purple-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="custom-f-svg">
@@ -522,7 +549,6 @@ export default function CloudDetailsPage() {
                   <p className="feature-subtext">Seamlessly grow with your business.</p>
                 </div>
               </div>
-
             </div>
 
             <p className="cd-description">
@@ -533,18 +559,10 @@ export default function CloudDetailsPage() {
 
           <div className="cd-right">
             <div className="slates-composition-wrapper">
-
-              {/* 1. TOP-LEFT TRANSPARENT CODE SLATE */}
               <div className="code-slate-card new-slate-tl">
                 <div className="slate-header">
-                  <div className="ide-dots">
-                    <span className="dot dot-red"></span>
-                    <span className="dot dot-yellow"></span>
-                    <span className="dot dot-green"></span>
-                  </div>
                   <span className="slate-filename">Editor</span>
                 </div>
-
                 <div className="slate-editor-body" ref={editorBodyRef1}>
                   <pre className="code-display">
                     {renderHighlightedCode(displayedText1)}
@@ -553,7 +571,6 @@ export default function CloudDetailsPage() {
                 </div>
               </div>
 
-              {/* 2. TOP-RIGHT TRANSPARENT AI AGENT SLATE */}
               <div className="code-slate-card new-slate-tr">
                 <div className="ai-agent-header">
                   <div className="ai-agent-status-wrapper">
@@ -570,14 +587,8 @@ export default function CloudDetailsPage() {
                 <div className="ai-agent-footer-glow"></div>
               </div>
 
-              {/* 3. BOTTOM-RIGHT TRANSPARENT MOCKUP UI SLATE */}
               <div className="code-slate-card new-slate-br">
                 <div className="slate-header">
-                  <div className="ide-dots">
-                    <span className="dot dot-red"></span>
-                    <span className="dot dot-yellow"></span>
-                    <span className="dot dot-green"></span>
-                  </div>
                   <span className="slate-filename">Figma Design</span>
                 </div>
                 <div className="mockup-ui-body">
@@ -594,7 +605,6 @@ export default function CloudDetailsPage() {
                 </div>
               </div>
 
-              {/* 4. BOTTOM-LEFT TRANSPARENT TERMINAL SLATE */}
               <div className="code-slate-card new-slate-bl">
                 <div className="slate-editor-body terminal-body" ref={editorBodyRef2}>
                   <pre className="code-display">
@@ -603,17 +613,15 @@ export default function CloudDetailsPage() {
                   </pre>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </section>
 
       {/* =========================================================================
-          SECTION 2: REET TECHNOLOGIES MANAGED SERVICES (VIDEO BACKGROUND)
+          SECTION 2: REET TECHNOLOGIES MANAGED SERVICES
           ========================================================================= */}
       <section className="reet-intro-root">
-        {/* Background Video element with corrected path variable */}
         <video 
           className="reet-bg-video" 
           autoPlay 
@@ -625,13 +633,10 @@ export default function CloudDetailsPage() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Semi-transparent black background overlay (reduced opacity for clearer view) */}
         <div className="reet-intro-bg-overlay"></div>
         <div className="reet-intro-bg-glow"></div>
-        
+
         <div className="reet-intro-container">
-          
-          {/* Left Side: Comprehensive Content */}
           <div className="reet-intro-left">
             <div className="reet-badge">
               <span className="reet-badge-dot"></span>
@@ -652,9 +657,7 @@ export default function CloudDetailsPage() {
             </p>
           </div>
 
-          {/* Right Side: Darker Animated AWS Cloud Infrastructure Illustration */}
           <div className="reet-intro-right">
-            
             <div className="reet-anim-stage">
               <div className="ra-node cloud-node">Cloud (AWS)</div>
               <div className="ra-pulse-line">
@@ -666,14 +669,12 @@ export default function CloudDetailsPage() {
               </div>
               <div className="ra-node db-node">Database Management</div>
             </div>
-
           </div>
-
         </div>
       </section>
 
       {/* =========================================================================
-          SECTION 3: COMPREHENSIVE AWS SOLUTIONS (WITH secondsection.jpeg BACKGROUND)
+          SECTION 3: COMPREHENSIVE AWS SOLUTIONS
           ========================================================================= */}
       <section 
         className="comprehensive-aws-root"
@@ -691,9 +692,9 @@ export default function CloudDetailsPage() {
           <div className="header-badge">
             <span>OUR AWS EXPERTISE INCLUDES</span>
           </div>
-          <h2 className="section-main-title section-title-compact">
-            Comprehensive AWS Solutions <br />
-            <span className="text-highlight-cyan">for Your Business</span>
+          <h2 className="section-main-title section-title-compact" style={{ whiteSpace: 'nowrap' }}>
+            Comprehensive AWS Solutions<br />
+            <span className="text-highlight-cyan">For Your Business</span>
           </h2>
           <p className="section-sub-title">
             We deliver secure, scalable, and high-performance cloud solutions tailored to your business needs.
@@ -701,8 +702,6 @@ export default function CloudDetailsPage() {
         </div>
 
         <div className="comprehensive-3col-wrapper">
-          
-          {/* Left Column: First 6 Expertise Items */}
           <div className="comp-column col-left">
             {awsExpertiseItems.slice(0, 6).map((item) => (
               <div key={item.id} className="comp-expertise-row">
@@ -712,10 +711,8 @@ export default function CloudDetailsPage() {
             ))}
           </div>
 
-          {/* Middle Column: Interactive Cloud Architecture Animation */}
           <div className="comp-column col-middle">
             <div className="comp-graphic-stage">
-              {/* All 8 Satellite Nodes Connecting Lines */}
               <svg className="comp-svg-network" viewBox="0 0 500 500">
                 <line x1="250" y1="250" x2="250" y2="70" className="comp-net-wire" />
                 <line x1="250" y1="250" x2="410" y2="130" className="comp-net-wire" />
@@ -727,7 +724,6 @@ export default function CloudDetailsPage() {
                 <line x1="250" y1="250" x2="90" y2="130" className="comp-net-wire" />
               </svg>
 
-              {/* Central AWS Cloud Hub */}
               <div className="comp-center-cloud-node official-aws-cloud">
                 <div className="comp-cloud-glow"></div>
                 <svg className="official-cloud-svg" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -739,36 +735,17 @@ export default function CloudDetailsPage() {
                 </div>
               </div>
 
-              {/* 8 Satellite Nodes Icons */}
-              <div className="comp-sat-node node-top">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
-              </div>
-              <div className="comp-sat-node node-top-right">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
-              </div>
-              <div className="comp-sat-node node-right">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-              </div>
-              <div className="comp-sat-node node-bottom-right">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-              </div>
-              <div className="comp-sat-node node-bottom">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-              </div>
-              <div className="comp-sat-node node-bottom-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-              </div>
-              <div className="comp-sat-node node-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-              </div>
-              <div className="comp-sat-node node-top-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-              </div>
-
+              <div className="comp-sat-node node-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg></div>
+              <div className="comp-sat-node node-top-right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></div>
+              <div className="comp-sat-node node-right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></div>
+              <div className="comp-sat-node node-bottom-right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+              <div className="comp-sat-node node-bottom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+              <div className="comp-sat-node node-bottom-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg></div>
+              <div className="comp-sat-node node-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+              <div className="comp-sat-node node-top-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="sat-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
             </div>
           </div>
 
-          {/* Right Column: Remaining 6 Expertise Items */}
           <div className="comp-column col-right">
             {awsExpertiseItems.slice(6, 12).map((item) => (
               <div key={item.id} className="comp-expertise-row">
@@ -777,22 +754,21 @@ export default function CloudDetailsPage() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       {/* =========================================================================
-          SECTION 4: AWS CLOUD SOLUTIONS
+          SECTION 4: AWS CLOUD SOLUTIONS (3D ECOSYSTEM)
           ========================================================================= */}
-      <section className="aws-services-root" id="aws-services-section">
-        <div className="section-header-centered">
-          <div className="header-badge">
+      <section className="aws-services-root" id="aws-services-section" style={{ backgroundColor: '#F0F0F0', color: '#17243D', paddingTop: '20px', paddingBottom: '50px' }}>
+        <div className="section-header-centered" style={{ marginBottom: '20px' }}>
+          <div className="header-badge" style={{ backgroundColor: 'rgba(56, 189, 248, 0.15)', borderColor: '#38bdf8', color: '#0284c7' }}>
             <span>3D CLOUD ECOSYSTEM</span>
           </div>
-          <h2 className="section-main-title">
-            AWS CLOUD SOLUTIONS BUILT FOR <span className="text-highlight-cyan">YOUR BUSINESS</span>
+          <h2 className="section-main-title" style={{ color: '#0f172a' }}>
+            AWS CLOUD SOLUTIONS BUILT FOR <span className="text-highlight-cyan" style={{ background: 'linear-gradient(110deg, #0284c7 0%, #7c3aed 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>YOUR BUSINESS</span>
           </h2>
-          <p className="section-sub-title">
+          <p className="section-sub-title" style={{ color: '#475569' }}>
             We design and manage cloud environments that are secure, flexible, and ready to scale with your business.
           </p>
         </div>
@@ -804,13 +780,14 @@ export default function CloudDetailsPage() {
                 key={item.id} 
                 className={`service-glass-card ${activeNode === item.id ? 'active-node-card' : ''}`}
                 onMouseEnter={() => setActiveNode(item.id)}
+                style={{ backgroundColor: '#060F1E', borderColor: 'rgba(56, 189, 248, 0.3)', boxShadow: '0 12px 35px rgba(0, 0, 0, 0.15)' }}
               >
                 <div className="card-top-row">
-                  <span className="service-icon-box">{item.icon}</span>
-                  <span className="service-status-tag">AWS CERTIFIED</span>
+                  <span className="service-icon-box" style={{ backgroundColor: 'rgba(56, 189, 248, 0.12)', borderColor: '#0284c7' }}>{item.icon}</span>
+                  <span className="service-status-tag" style={{ backgroundColor: '#172554', color: '#38bdf8', border: '1px solid #1e3a8a' }}>AWS CERTIFIED</span>
                 </div>
-                <h3 className="service-card-title">{item.title}</h3>
-                <p className="service-card-desc">{item.desc}</p>
+                <h3 className="service-card-title" style={{ color: '#ffffff' }}>{item.title}</h3>
+                <p className="service-card-desc" style={{ color: '#94a3b8' }}>{item.desc}</p>
                 <div className="card-hover-border"></div>
               </div>
             ))}
@@ -820,6 +797,7 @@ export default function CloudDetailsPage() {
             className="hub-central-scene-container"
             onMouseMove={handleMouseMove4}
             onMouseLeave={handleMouseLeave4}
+            style={{ height: '500px' }}
           >
             <div 
               className="hub-3d-canvas"
@@ -827,37 +805,52 @@ export default function CloudDetailsPage() {
                 transform: `rotateX(${coords4.y * -12}deg) rotateY(${coords4.x * 14}deg)`
               }}
             >
-              <div className="hub-orbital-ring ring-major"></div>
-              <div className="hub-orbital-ring ring-minor"></div>
+              <div className="hub-orbital-ring ring-major" style={{ borderColor: 'rgba(14, 165, 233, 0.4)' }}></div>
+              <div className="hub-orbital-ring ring-minor" style={{ borderColor: 'rgba(56, 189, 248, 0.5)' }}></div>
 
               <svg className="hub-connections-svg" viewBox="0 0 500 500">
-                <line x1="250" y1="250" x2="60" y2="120" className="hub-laser-wire" />
-                <line x1="250" y1="250" x2="60" y2="250" className="hub-laser-wire" />
-                <line x1="250" y1="250" x2="60" y2="380" className="hub-laser-wire" />
-                <line x1="250" y1="250" x2="440" y2="120" className="hub-laser-wire" />
-                <line x1="250" y1="250" x2="440" y2="250" className="hub-laser-wire" />
-                <line x1="250" y1="250" x2="440" y2="380" className="hub-laser-wire" />
-                <circle cx="250" cy="250" r="8" className="hub-core-pulse-dot" />
+                <line x1="250" y1="250" x2="60" y2="120" className="hub-laser-wire" style={{ stroke: 'rgba(14, 165, 233, 0.6)' }} />
+                <line x1="250" y1="250" x2="440" y2="120" className="hub-laser-wire" style={{ stroke: 'rgba(14, 165, 233, 0.6)' }} />
+                <line x1="250" y1="250" x2="60" y2="380" className="hub-laser-wire" style={{ stroke: 'rgba(14, 165, 233, 0.6)' }} />
+                <line x1="250" y1="250" x2="440" y2="380" className="hub-laser-wire" style={{ stroke: 'rgba(14, 165, 233, 0.6)' }} />
+                <circle cx="60" cy="120" r="4" fill="#0ea5e9" />
+                <circle cx="440" cy="120" r="4" fill="#0ea5e9" />
+                <circle cx="60" cy="380" r="4" fill="#0ea5e9" />
+                <circle cx="440" cy="380" r="4" fill="#0ea5e9" />
               </svg>
 
-              {/* HOLOGRAPHIC QUANTUM CLOUD NODE */}
-              <div className="quantum-holo-node">
-                <div className="holo-orbit-ring ring-one"></div>
-                <div className="holo-orbit-ring ring-two"></div>
-                <div className="holo-core-pyramid">
-                  <div className="holo-scanner-beam"></div>
-                  <div className="holo-icon-container">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="holo-svg">
+              <div className="quantum-holo-node" style={{ width: '260px', height: '260px' }}>
+                <div className="holo-orbit-ring ring-one" style={{ width: '180px', height: '180px', borderColor: 'rgba(14, 165, 233, 0.6)' }}></div>
+                <div className="holo-orbit-ring ring-two" style={{ width: '230px', height: '230px', borderColor: 'rgba(56, 189, 248, 0.4)' }}></div>
+
+                <div style={{
+                  position: 'relative',
+                  width: '140px',
+                  height: '140px',
+                  background: 'linear-gradient(145deg, #0b1326, #060f1e)',
+                  borderRadius: '32px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: '0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 2px rgba(56, 189, 248, 0.2)',
+                  border: '1px solid rgba(56, 189, 248, 0.3)'
+                }}>
+                  <div style={{
+                    width: '92px',
+                    height: '92px',
+                    background: 'linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%)',
+                    borderRadius: '20px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    boxShadow: '0 10px 25px rgba(2, 132, 199, 0.4)'
+                  }}>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '42px', height: '42px' }}>
                       <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
                     </svg>
                   </div>
                 </div>
-                <div className="holo-telemetry-badge">
-                  <span className="holo-pulse-dot"></span>
-                  <span className="holo-text">AWS QUANTUM NODE</span>
-                </div>
               </div>
-
             </div>
           </div>
 
@@ -867,13 +860,14 @@ export default function CloudDetailsPage() {
                 key={item.id} 
                 className={`service-glass-card ${activeNode === item.id ? 'active-node-card' : ''}`}
                 onMouseEnter={() => setActiveNode(item.id)}
+                style={{ backgroundColor: '#060F1E', borderColor: 'rgba(56, 189, 248, 0.3)', boxShadow: '0 12px 35px rgba(0, 0, 0, 0.15)' }}
               >
                 <div className="card-top-row">
-                  <span className="service-icon-box">{item.icon}</span>
-                  <span className="service-status-tag">AWS SECURE</span>
+                  <span className="service-icon-box" style={{ backgroundColor: 'rgba(56, 189, 248, 0.12)', borderColor: '#0284c7' }}>{item.icon}</span>
+                  <span className="service-status-tag" style={{ backgroundColor: '#172554', color: '#38bdf8', border: '1px solid #1e3a8a' }}>AWS SECURE</span>
                 </div>
-                <h3 className="service-card-title">{item.title}</h3>
-                <p className="service-card-desc">{item.desc}</p>
+                <h3 className="service-card-title" style={{ color: '#ffffff' }}>{item.title}</h3>
+                <p className="service-card-desc" style={{ color: '#94a3b8' }}>{item.desc}</p>
                 <div className="card-hover-border"></div>
               </div>
             ))}
@@ -882,37 +876,102 @@ export default function CloudDetailsPage() {
       </section>
 
       {/* =========================================================================
-          SECTION 5: DATA MANAGEMENT SERVICES
+          SECTION 5: KEY FEATURES (PURE BLACK BACKGROUND)
           ========================================================================= */}
-      <section className="data-services-root">
-        <div className="section-header-centered">
-          <div className="header-badge badge-green">
-            <span>ENTERPRISE SERVER &amp; DATA ARCHITECTURE</span>
+      <section className="key-features-root">
+        <div className="section-header-centered" style={{ marginBottom: '20px' }}>
+          <div className="header-badge kf-header-badge">
+            <span>OUR STRENGTH</span>
           </div>
-          <h2 className="section-main-title">
-            MANAGE YOUR SERVERS. <span className="text-highlight-green">UNLOCK HIGH PERFORMANCE.</span>
+          <h2 className="section-main-title kf-main-title">
+            Key <span className="kf-title-gradient">Features</span>
           </h2>
-          <p className="section-sub-title">
-            Our server management solutions help organizations keep infrastructure stable, secure, scalable, and responsive.
+          <p className="section-sub-title kf-sub-title">
+            Powerful cloud solutions designed to ensure security, performance and peace of mind.
           </p>
         </div>
 
-        <div className="data-services-matrix-grid">
-          {dataMgmtServices.map((item, idx) => (
-            <div key={item.id} className="data-matrix-card">
-              <div className="data-card-corner-tag">0{idx + 1} // SYS</div>
-              <div className="data-card-icon-halo">
-                {item.icon}
+        <div className="kf-layout-wrapper">
+          <div className="kf-column">
+            {keyFeaturesData.filter(i => i.side === 'left').map((item) => (
+              <div key={item.id} className="kf-feature-row">
+                <div className="kf-icon-box">{item.icon}</div>
+                <div className="kf-text-content">
+                  <span className="kf-check-icon">✓</span>
+                  <span className="kf-row-title">
+                    <strong className="kf-highlight-text">{item.titleHighlight}</strong> {item.titleRest}
+                  </span>
+                </div>
               </div>
-              <h3 className="data-card-title">{item.title}</h3>
-              <p className="data-card-desc">{item.desc}</p>
-              
-              <div className="data-card-live-bar">
-                <span className="data-activity-line"></span>
-                <span className="data-status-label">ONLINE &amp; MANAGED</span>
+            ))}
+          </div>
+
+          <div 
+            className="kf-central-stage"
+            onMouseMove={handleMouseMove5}
+            onMouseLeave={handleMouseLeave5}
+          >
+            <div 
+              className="kf-3d-canvas"
+              style={{
+                transform: `rotateX(${coords5.y * -8}deg) rotateY(${coords5.x * 10}deg)`
+              }}
+            >
+              <div className="kf-orbit-circle kf-circle-1"></div>
+              <div className="kf-orbit-circle kf-circle-2"></div>
+              <div className="kf-orbit-circle kf-circle-3"></div>
+              <div className="kf-orbit-arc kf-arc-1"></div>
+              <div className="kf-orbit-arc kf-arc-2"></div>
+
+              <svg className="kf-svg-connections" viewBox="0 0 460 460">
+                <line x1="230" y1="230" x2="45" y2="75" className="kf-laser-line" />
+                <line x1="230" y1="230" x2="45" y2="160" className="kf-laser-line" />
+                <line x1="230" y1="230" x2="45" y2="245" className="kf-laser-line" />
+                <line x1="230" y1="230" x2="45" y2="330" className="kf-laser-line" />
+
+                <line x1="230" y1="230" x2="415" y2="75" className="kf-laser-line-purple" />
+                <line x1="230" y1="230" x2="415" y2="160" className="kf-laser-line-purple" />
+                <line x1="230" y1="230" x2="415" y2="245" className="kf-laser-line-purple" />
+                <line x1="230" y1="230" x2="415" y2="330" className="kf-laser-line-purple" />
+
+                <circle cx="45" cy="75" r="4" fill="#38bdf8" />
+                <circle cx="45" cy="160" r="4" fill="#38bdf8" />
+                <circle cx="45" cy="245" r="4" fill="#38bdf8" />
+                <circle cx="45" cy="330" r="4" fill="#38bdf8" />
+
+                <circle cx="415" cy="75" r="4" fill="#c084fc" />
+                <circle cx="415" cy="160" r="4" fill="#c084fc" />
+                <circle cx="415" cy="245" r="4" fill="#c084fc" />
+                <circle cx="415" cy="330" r="4" fill="#c084fc" />
+              </svg>
+
+              <div className="kf-image-cloud-center">
+                <svg className="kf-img-cloud-svg" viewBox="0 0 140 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M110 40C108.5 27 97 17 83.5 17C72.5 17 63 23.5 58.5 32.8C53.2 28.1 46.2 25.2 38.5 25.2C21 25.2 6.8 39.4 6.8 56.9C6.8 60.5 7.4 64 8.7 67.2H112C122.5 67.2 131 58.7 131 48.2C131 38.2 123.2 30 113.2 29.1C112.3 33.5 110.8 37 110 40Z" stroke="url(#cloudGrad)" strokeWidth="3.5" strokeLinejoin="round" fill="rgba(14, 165, 233, 0.05)"/>
+                  <defs>
+                    <linearGradient id="cloudGrad" x1="6.8" y1="17" x2="131" y2="67.2" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#38bdf8" />
+                      <stop offset="1" stopColor="#c084fc" />
+                    </linearGradient>
+                  </defs>
+                </svg>
               </div>
             </div>
-          ))}
+          </div>
+
+          <div className="kf-column">
+            {keyFeaturesData.filter(i => i.side === 'right').map((item) => (
+              <div key={item.id} className="kf-feature-row">
+                <div className="kf-icon-box">{item.icon}</div>
+                <div className="kf-text-content">
+                  <span className="kf-check-icon">✓</span>
+                  <span className="kf-row-title">
+                    <strong className="kf-highlight-text">{item.titleHighlight}</strong> {item.titleRest}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
